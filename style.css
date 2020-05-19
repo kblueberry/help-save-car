@@ -65,12 +65,35 @@
   align-items: center;
 }
 
-.image-for-page {
-  background-image: url('Слой 13.png');
+.img-wrapper {
+  position: relative;
+  text-align: center;
+  display: block;
+}
+
+.img-dashed-frame {
   position: absolute;
-  left: 656px;
-  top: 509px;
-  width: 599px;
-  height: 470px;
+  left: 30%;
+  /* top: 41%; */
+  width: 100%;
+  height: auto;
+  max-width: 40%;
+  display: block;
+}
+
+.image-bg {
+  width: 100%;
+  height: auto;
+  max-width: 36%;
+  margin: 0 auto;
   z-index: 17;
+  display: block;
+}
+
+.bike {
+  width: 100%;
+  max-width: 15%;
+  position: absolute;
+  top: 29%;
+  left: 43%;
 }
