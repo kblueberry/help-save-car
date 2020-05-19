@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'avengeance_heroic_avengerIt';
+  src: url('http://127.0.0.1:5500/fonts/avengeance_heroic_avenger_at-webfont.woff2')
+      format('woff2'),
+    url('http://127.0.0.1:5500/fonts/avengeance_heroic_avenger_at-webfont.woff')
+      format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'avengeance_heroic_avengerbold';
+  src: url('http://127.0.0.1:5500/fonts/avengeance_heroic_avenger_bd-webfont.woff2')
+      format('woff2'),
+    url('http://127.0.0.1:5500/fonts/avengeance_heroic_avenger_bd-webfont.woff')
+      format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'avengeance_heroic_avengerBdIt';
+  src: url('http://127.0.0.1:5500/fonts/avengeance_heroic_avenger_bi-webfont.woff2')
+      format('woff2'),
+    url('http://127.0.0.1:5500/fonts/avengeance_heroic_avenger_bi-webfont.woff')
+      format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'avengeance_heroic_avengerRg';
+  src: url('http://127.0.0.1:5500/fonts/avengeance_heroic_avenger-webfont.woff2')
+      format('woff2'),
+    url('http://127.0.0.1:5500/fonts/avengeance_heroic_avenger-webfont.woff')
+      format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
