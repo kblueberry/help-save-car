@@ -1,0 +1,76 @@
+@import './fonts/stylesheet.css';
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  position: relative;
+  display: inline-block;
+  margin-top: 15%;
+  padding: 0px 20px 7px 20px;
+  font-family: 'avengeance_heroic_avengerIt';
+  font-size: 9vh;
+  color: #ffffff;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+}
+
+.logo::before {
+  vertical-align: bottom;
+  content: '';
+  font-family: 'avengeance_heroic_avengerIt';
+  font-size: 9vh;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+.logo::after {
+  position: absolute;
+  display: block;
+  top: -2%;
+  left: 7%;
+  content: 'HelpSaveCar';
+  font-family: 'avengeance_heroic_avengerIt';
+  font-size: 9vh;
+  color: rgb(250, 60, 41);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+.motto {
+  font-size: 3vh;
+  font-family: 'FuturaPT';
+  color: #000000;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.lng-list {
+  outline-style: none;
+}
+
+.option-lng {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.image-for-page {
+  background-image: url('Слой 13.png');
+  position: absolute;
+  left: 656px;
+  top: 509px;
+  width: 599px;
+  height: 470px;
+  z-index: 17;
+}
