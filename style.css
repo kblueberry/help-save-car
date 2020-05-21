@@ -113,3 +113,42 @@
   top: -14%;
   left: 46%;
 }
+
+.cup,
+.camera {
+  position: absolute;
+  width: 100%;
+  max-width: 5%;
+}
+
+.hand {
+  position: absolute;
+  width: 100%;
+  max-width: 4%;
+}
+
+.defense {
+  position: absolute;
+  width: 100%;
+  max-width: 3%;
+}
+
+.hand {
+  left: 25%;
+  top: 42%;
+}
+
+.defense {
+  left: 38%;
+  top: -8%;
+}
+
+.cup {
+  left: 57%;
+  top: -7%;
+}
+
+.camera {
+  left: 70%;
+  top: 44%;
+}
