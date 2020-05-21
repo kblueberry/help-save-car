@@ -97,3 +97,19 @@
   top: 29%;
   left: 43%;
 }
+
+.icons-over {
+  width: 100%;
+  max-width: 45%;
+  position: absolute;
+  top: -11%;
+  left: 28%;
+}
+
+.lock {
+  width: 100%;
+  max-width: 7%;
+  position: absolute;
+  top: -14%;
+  left: 46%;
+}
