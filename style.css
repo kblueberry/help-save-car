@@ -215,7 +215,8 @@ body {
   z-index: 1000;
 }
 
-.zoom-in-icon {
+.zoom-in-icon,
+.person-icon {
   position: absolute;
   max-width: 80%;
   top: 2rem;
@@ -228,5 +229,13 @@ body {
   max-width: 80%;
   top: 2.9rem;
   left: 2rem;
+  z-index: 1000;
+}
+
+.locker-icon {
+  position: absolute;
+  max-width: 80%;
+  top: 2rem;
+  left: 2.8rem;
   z-index: 1000;
 }
