@@ -249,10 +249,11 @@ body {
 }
 
 #qr-data {
-  margin: 0 auto;
+  background-color: rgb(255, 66, 44);
 }
 
 .app-download-container {
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
