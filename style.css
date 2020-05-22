@@ -1,11 +1,18 @@
 @import './fonts/stylesheet.css';
 
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-image: url(./images/grey-icons.png);
-  background-repeat: repeat;
+  background-repeat: repeat-y;
 }
 
 .logo-wrapper {
@@ -19,7 +26,6 @@
   position: relative;
   display: inline-block;
   margin-top: 15%;
-  padding: 0px 20px 7px 20px;
   font-family: 'avengeance_heroic_avengerIt';
   font-size: 9vh;
   color: #ffffff;
@@ -39,8 +45,8 @@
 .logo::after {
   position: absolute;
   display: block;
-  top: -2%;
-  left: 7%;
+  top: -3%;
+  left: 1.8rem;
   content: 'HelpSaveCar';
   font-family: 'avengeance_heroic_avengerIt';
   font-size: 9vh;
@@ -168,4 +174,47 @@
 .circle-switcher {
   width: 100%;
   max-width: 1%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap !important;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fact-about-us {
+  font-family: 'FuturaPT';
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fact-img-wrapper {
+  position: relative;
+}
+
+.fact-about-us-text {
+  max-width: 40%;
+  text-align: center;
+}
+
+.car-icon {
+  position: absolute;
+  max-width: 80%;
+  top: 2rem;
+  left: 1.7rem;
+  z-index: 1000;
+}
+
+.zoom-in-icon {
+  position: absolute;
+  max-width: 80%;
+  top: 2rem;
+  left: 2.3rem;
+  z-index: 1000;
 }

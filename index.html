@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HelpSaveCar</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -28,8 +29,8 @@
     ></script>
   </head>
   <body>
-    <div class="main">
-      <div id="home-screen">
+    <div class="main w-100 h-100">
+      <div id="home-screen h-100">
         <div class="lng-settings">
           <select id="lng-list">
             <option value="ua">
@@ -60,7 +61,7 @@
           </select>
         </div>
         <div class="logo-wrapper">
-          <h1 class="logo">HelpSaveCar</h1>
+          <h1 class="logo pt-0 pl-4 pb-1 pr-4">HelpSaveCar</h1>
           <h5 class="motto my-0 py-0">збережи свій автомобіль</h5>
         </div>
         <div class="content my-4 py-2">
@@ -142,7 +143,24 @@
           </li>
         </div>
       </div>
-      <div id="why-us"></div>
+      <div id="why-us h-100">
+        <div class="row">
+          <div class="fact-about-us my-5 py-3">
+            <div class="fact-img-wrapper">
+              <img src="./images/fact-about-us-img-1.png" alt="fact-img-bg" class="service-img">
+              <img src="./images/car-with-umbrella.png" alt="car" class="car-icon">
+            </div>
+            <p class="fact-about-us-text py-3">Даний сервіс несе за мету допомогти водіям, які залишили свої машини без нагляду швидко відреагувати у випадку евакуації</p>
+          </div>
+          <div class="fact-about-us my-5 py-3">
+            <div class="fact-img-wrapper">
+              <img src="./images/fact-about-us-img-1.png" alt="fact-img-bg" class="service-img">
+              <img src="./images/zoom-in.png" alt="zoom-in" class="zoom-in-icon">
+            </div>
+            <p class="fact-about-us-text py-3">Ми орієнтуємось на небайдужих водіїв та перехожих, які хочуть досягти ладу на дорогах цивільним шляхом</p>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
