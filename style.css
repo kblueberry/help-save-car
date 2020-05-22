@@ -184,6 +184,10 @@ body {
   align-items: center;
 }
 
+.row:nth-child(2) {
+  display: contents;
+}
+
 .fact-about-us {
   font-family: 'FuturaPT';
   display: flex;
@@ -216,5 +220,13 @@ body {
   max-width: 80%;
   top: 2rem;
   left: 2.3rem;
+  z-index: 1000;
+}
+
+.message-icon {
+  position: absolute;
+  max-width: 80%;
+  top: 2.9rem;
+  left: 2rem;
   z-index: 1000;
 }
