@@ -293,12 +293,6 @@ body {
   width: inherit;
 }
 
-/* #contant {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-} */
-
 .contact-window {
   display: flex;
   flex-direction: column;
@@ -329,7 +323,8 @@ textarea {
   border: 1px solid black;
 }
 
-.send-request {
+.send-request,
+.sign-up {
   display: block;
   margin: 0 auto;
   background-color: rgb(255, 66, 44);
