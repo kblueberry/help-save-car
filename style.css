@@ -293,6 +293,10 @@ body {
   width: inherit;
 }
 
+#contact {
+  background: repeat rgb(0, 0, 0, 0.1);
+}
+
 .contact-window {
   display: flex;
   flex-direction: column;
