@@ -292,3 +292,48 @@ body {
 .qr-code {
   width: inherit;
 }
+
+/* #contant {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+} */
+
+.contact-window {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.form-title {
+  text-align: center;
+}
+
+.form-details {
+  border: 2px solid black;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field > label {
+  text-align: center;
+  font-weight: 500;
+}
+
+.form-field select,
+input,
+textarea {
+  border: 1px solid black;
+}
+
+.send-request {
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(255, 66, 44);
+  border-radius: 10px;
+  font-size: 2.2vh;
+  color: #fff;
+}
