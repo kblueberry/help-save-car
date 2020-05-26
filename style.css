@@ -338,3 +338,20 @@ textarea {
   font-size: 2.2vh;
   color: #fff;
 }
+
+.download {
+  margin: 12vh 0;
+  background-color: rgb(255, 66, 44);
+  border: none;
+  border-radius: 10px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 3.7vh;
+  color: #fff;
+}
+
+.download > span {
+  display: block;
+  font-size: 1.9vh;
+}
