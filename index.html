@@ -12,6 +12,7 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -27,28 +28,23 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <div class="main w-100 h-100">
       <div id="home-screen h-100">
         <div class="lng-settings">
-          <select id="lng-list">
-            <option value="ua">
-              <!-- <img src="./images/icons/ua_flag.svg" alt="ua_flag" />
-            Ukrainian -->
-              <div class="option-lng">
-                <img src="./images/icons/ua_flag.svg" alt="ua_flag" />
-                <p class="lng-name">Ukrainian</p>
-              </div>
-            </option>
-            <option value="uk-us">
-              <img src="" alt="ua_flag" />
-              English
-            </option>
-            <option value="it">
-              <img src="" alt="ua_flag" />
-              Italien
-            </option>
+            <select name="filesB" id="filesB">
+              <option value="mypodcast" data-class="podcast">John Resig Podcast</option>
+              <option value="myvideo" data-class="video">Scott González Video</option>
+              <option value="myrss" data-class="rss">jQuery RSS XML</option>
+            </select>
+          <!-- <select id="lng-list">
+            <option value="ua">Ukrainian</option>
+            <option value="uk-us">English</option>
+            <option value="it">Italien</option>
             <option value="de">Deutch</option>
             <option value="fr">Français</option>
             <option value="pt">Português</option>
@@ -58,7 +54,25 @@
             <option value="in">Bahasa Indonesia</option>
             <option value="viet">Ngôn ngữ tiếng Việt</option>
             <option value="is">שפה עברית</option>
-          </select>
+          </select> -->
+          <!-- <div id="lng-list" class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Вибрати мову
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item ua" href="#"><img src="./images/icons/ua_flag.svg" alt="ua" class="ua">Ukrainian</a></li>
+              <li><a class="dropdown-item en" href="#"><img src="./images/icons/ua_flag.svg" alt="ua" class="ua">English</a></li>
+              <li><a class="dropdown-item it" href="#"><img src="./images/icons/ua_flag.svg" alt="ua" class="ua">Italien</a></li>
+              <li><a class="dropdown-item" href="#"><img src="./images/icons/ua_flag.svg" alt="ua" class="ua">Deutch</a></li>
+              <li><a class="dropdown-item" href="#"><img src="./images/icons/fr_flag.svg" alt="fr" class="fr">Français action</a></li>
+              <li><a class="dropdown-item" href="#"><img src="./images/icons/pt_flag.svg" alt="pt" class="pt">Português</a></li>
+              <li><a class="dropdown-item" href="#"><img src="./images/icons/china-flag.svg" alt="china" class="china">中文</a></li>
+              <li><a class="dropdown-item" href="#"><img src="./images/icons/ru_flag.svg" alt="ru" class="ru">Русский</a></li>
+              <li><a class="dropdown-item" href="#"><img src="./images/icons/pl_flag.svg" alt="pl" class="pl">Polskie</a></li>
+              <li><a class="dropdown-item" href="#"><img src="./images/icons/in_flag.svg" alt="indonesian" class="indonesian">Bahasa Indonesia</a></li>
+              <li><a class="dropdown-item" href="#"><img src="./images/icons/vie_flag.svg" alt="vie" class="vie">Ngôn ngữ tiếng Việt</a></li>
+              <li><a class="dropdown-item" href="#"><img src="./images/icons/is_flag.svg" alt="israel" class="israel">שפה עברית</a></li>
+              </ul>
+          </div> -->
         </div>
         <div class="logo-wrapper">
           <h1 class="logo pt-0 pl-4 pb-1 pr-4">HelpSaveCar</h1>

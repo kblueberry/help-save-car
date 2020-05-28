@@ -19,6 +19,52 @@ body {
   align-items: center;
 }
 
+.ui-selectmenu-menu .ui-menu.customicons .ui-menu-item-wrapper {
+  padding: 0.5em 0 0.5em 3em;
+}
+
+.ui-selectmenu-menu .ui-menu.customicons .ui-menu-item .ui-icon {
+  height: 30px;
+  width: 30px;
+  top: 0.1em;
+}
+
+.no-border {
+  outline: none;
+}
+
+.ui-icon.video {
+  background: url('./images/icons/ua_flag.svg') no-repeat;
+}
+
+.ui-icon.podcast {
+  background: url('./images/icons/us_flag.svg') 0 0 no-repeat;
+}
+
+.ui-icon.rss {
+  background: url('./images/icons/vie_flag.svg') 0 0 no-repeat;
+}
+
+#lng-list {
+  background-color: white;
+}
+
+#dropdownMenuLink {
+  border: none;
+  color: #000000;
+  background-color: white;
+}
+
+/* .dropdown-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown-menu > li a img {
+  min-width: 20px;
+} */
+
 .logo-wrapper {
   display: flex;
   justify-content: flex-start;
@@ -67,14 +113,11 @@ body {
   text-align: center;
 }
 
-.lng-list {
-  outline-style: none;
-}
-
-.option-lng {
+.lng {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .img-wrapper {
@@ -86,7 +129,6 @@ body {
 .img-dashed-frame {
   position: absolute;
   left: 30%;
-  /* top: 41%; */
   width: 100%;
   height: auto;
   max-width: 40%;
