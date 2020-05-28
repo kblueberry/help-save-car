@@ -301,12 +301,12 @@ body {
 .app-download-container {
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 .app-download {
-  width: fit-content;
+  width: 100%;
 }
 
 .store {
@@ -408,13 +408,4 @@ textarea {
 .download > span {
   display: block;
   font-size: 1.9vh;
-}
-
-@media screen and (min-width: 300px) {
-  /* .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  } */
 }
