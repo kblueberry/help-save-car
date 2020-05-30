@@ -409,3 +409,63 @@ textarea {
   display: block;
   font-size: 1.9vh;
 }
+
+.header-group {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-home-page input {
+  border: none;
+}
+
+.button-home-page input:focus {
+  outline: none;
+}
+
+.help-save-car-img {
+  max-width: 30%;
+}
+
+.help-save-car-title {
+  position: relative;
+  display: inline-block;
+  margin-top: 15%;
+  font-family: 'avengeance_heroic_avengerIt';
+  font-size: 3.5vh;
+  color: #ffffff;
+  -webkit-text-stroke-width: 1.8px;
+  -webkit-text-stroke-color: black;
+}
+
+.help-save-car-title::before {
+  vertical-align: bottom;
+  content: '';
+  font-family: 'avengeance_heroic_avengerIt';
+  font-size: 3.5vh;
+  -webkit-text-stroke-width: 1.8px;
+  -webkit-text-stroke-color: black;
+}
+
+.help-save-car-title::after {
+  position: absolute;
+  display: block;
+  top: -3%;
+  left: 1.6rem;
+  content: 'HelpSaveCar';
+  font-family: 'avengeance_heroic_avengerIt';
+  font-size: 3.5vh;
+  color: rgb(250, 60, 41);
+  -webkit-text-stroke-width: 1.8px;
+  -webkit-text-stroke-color: black;
+}
+}
