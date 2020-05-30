@@ -393,8 +393,10 @@ textarea {
   color: #fff;
 }
 
-.download {
-  margin: 12vh 0;
+.download,
+.create-api-key {
+  margin-top: 12vh;
+  margin-bottom: 12vh;
   background-color: rgb(255, 66, 44);
   border: none;
   border-radius: 10px;
@@ -468,4 +470,118 @@ textarea {
   -webkit-text-stroke-width: 1.8px;
   -webkit-text-stroke-color: black;
 }
+
+.my-profile-modal {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-title {
+  position: relative;
+  display: inline-block;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'avengeance_heroic_avengerIt';
+  font-size: 5.5vh;
+  color: #ffffff;
+  -webkit-text-stroke-width: 1.8px;
+  -webkit-text-stroke-color: black;
+}
+
+.modal-title::before {
+  vertical-align: bottom;
+  content: '';
+  font-family: 'avengeance_heroic_avengerIt';
+  font-size: 5.5vh;
+  -webkit-text-stroke-width: 1.8px;
+  -webkit-text-stroke-color: black;
+}
+
+.modal-title::after {
+  position: absolute;
+  display: block;
+  top: 1.3%;
+  left: -0.1em;
+  content: 'My Profile';
+  font-family: 'avengeance_heroic_avengerIt';
+  font-size: 5.5vh;
+  color: rgb(250, 60, 41);
+  -webkit-text-stroke-width: 1.8px;
+  -webkit-text-stroke-color: black;
+}
+
+.modal-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  border: 1px solid #000000;
+}
+
+.profile-avatar {
+  margin: 0 auto;
+}
+
+.profile-details p {
+  text-align: center;
+  display: block;
+  font-size: 1.8vh;
+}
+
+#company-name,
+.get-balance-on-date {
+  font-size: 2vh;
+  font-weight: 500;
+}
+
+.create-api-key,
+.select-date {
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  background-color: rgb(255, 66, 44);
+  border: none;
+  border-radius: 10px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 2.7vh;
+  color: #fff;
+}
+
+.balance-wrapper {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.current-balance {
+  font-size: 2vh;
+  font-weight: 500;
+}
+
+.link-style,
+.link-style:active,
+.link-style:focus,
+.link-style:visited {
+  color: rgb(255, 66, 44);
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 1.7vh;
+}
+
+#select-date {
+  font-size: 2vh;
+}
+
+#exit-button,
+#exit-button:hover,
+#exit-button:focus,
+#exit-button:active,
+#exit-button:visited {
+  text-decoration-color: rgb(255, 66, 44);
+  outline: none;
+  font-size: 3vh;
+  color: #000000;
 }

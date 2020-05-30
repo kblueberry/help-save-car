@@ -276,8 +276,34 @@
             <h1 class="help-save-car-title my-1 pt-0 pl-4 pb-1 pr-4">HelpSaveCar</h1>
           </div>
         </div>
+        <div class="my-profile-modal">
+          <h2 class="modal-title">My Profile</h3>
+          <div class="modal-profile col-9 col-md-6 col-lg-4 my-4 pt-2 pb-4">
+            <div class="row">
+              <img src="./images/avatar.png" alt="profile-photo" class="profile-avatar col-5 col-md-4 col-lg-2">
+            </div>
+            <div class="row">
+              <h5 class="profile-name pt-2">Олександр Ветанко</p>
+            </div>
+            <div class="profile-details my-0">
+              <p class="my-0" id="company-name">Назва компанії - Парус
+              <p class="my-0">ЕДРПОУ-98567833</p>
+              <p class="my-0">API-ключ - jdk23486ksngpy</p>
+            </div>
+            <button class="create-api-key px-4 py-3">Create API key</button>
+            <div class="balance-wrapper">
+              <p class="current-balance py-0 my-0">Поточний    баланс - 1112.00 грн.</p>
+              <button class="btn-link link-style my-0 py-0" style="color: rgb(255, 66, 44)">Поповнити баланс</button>
+            </div>
+            <div class="balance-wrapper my-4">
+              <p class="get-balance-on-date my-1">За певну дату:</p>
+              <input class="select-date my-0 px-3 py-2" id="select-date" type="button" value="дд./мм./рр.">
+            </div>
+            <button class="create-api-key get-report px-4 py-3">Звіт у форматі .xls</button>
+            <button class="btn-link link-style" id="exit-button">Вихід</button>
+          </div>
+        </div>
       </div>
-      
     </div>
   </body>
 </html>
