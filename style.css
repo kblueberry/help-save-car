@@ -83,7 +83,7 @@ body {
   letter-spacing: 0.1em;
   margin-top: 15%;
   font-family: 'avengeance_heroic_avengerIt';
-  font-size: 9vh;
+  font-size: 8.3vh;
   color: #ffffff;
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: black;
@@ -93,7 +93,7 @@ body {
   vertical-align: bottom;
   content: '';
   font-family: 'avengeance_heroic_avengerIt';
-  font-size: 9vh;
+  font-size: 8.3vh;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
 }
@@ -105,7 +105,7 @@ body {
   left: 1.8rem;
   content: 'HelpSaveCar';
   font-family: 'avengeance_heroic_avengerIt';
-  font-size: 9vh;
+  font-size: 8.3vh;
   color: rgb(250, 60, 41);
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
