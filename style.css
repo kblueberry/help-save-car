@@ -360,6 +360,10 @@ body {
   margin: 0 auto;
 }
 
+.form-title {
+  text-align: center;
+}
+
 .user-action-buttons {
   display: flex;
   justify-content: center;
