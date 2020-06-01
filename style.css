@@ -358,8 +358,22 @@ body {
   margin: 0 auto;
 }
 
-.form-title {
-  text-align: center;
+.user-action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#user-action,
+#user-action:focus,
+#user-action:hover,
+#user-action:active,
+#user-action:visited {
+  color: #000000;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 3vh;
 }
 
 .form-details {
