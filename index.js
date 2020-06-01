@@ -1,24 +1,31 @@
-$(function () {
-  $.widget('custom.iconselectmenu', $.ui.selectmenu, {
-    _renderItem: function (ul, item) {
-      var li = $('<li>'),
-        wrapper = $('<div>', { text: item.label })
-
-      if (item.disabled) {
-        li.addClass('ui-state-disabled')
-      }
-
-      $('<span>', {
-        style: item.element.attr('data-style'),
-        class: 'ui-icon ' + item.element.attr('data-class'),
-      }).appendTo(wrapper)
-
-      return li.append(wrapper).appendTo(ul)
-    },
+$(document).ready(function () {
+  $('.get-phone-code').on('click', function (event) {
+    event.preventDefault()
+    $('#code-modal').modal('show')
   })
-
-  $('#filesB')
-    .iconselectmenu()
-    .iconselectmenu('menuWidget')
-    .addClass('ui-menu-icons customicons no-border')
 })
+
+// $(function () {
+//   $.widget('custom.iconselectmenu', $.ui.selectmenu, {
+//     _renderItem: function (ul, item) {
+//       var li = $('<li>'),
+//         wrapper = $('<div>', { text: item.label })
+
+//       if (item.disabled) {
+//         li.addClass('ui-state-disabled')
+//       }
+
+//       $('<span>', {
+//         style: item.element.attr('data-style'),
+//         class: 'ui-icon ' + item.element.attr('data-class'),
+//       }).appendTo(wrapper)
+
+//       return li.append(wrapper).appendTo(ul)
+//     },
+//   })
+
+//   $('#filesB')
+//     .iconselectmenu()
+//     .iconselectmenu('menuWidget')
+//     .addClass('ui-menu-icons customicons no-border')
+// })

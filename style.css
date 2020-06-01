@@ -156,6 +156,7 @@ body {
   position: absolute;
   top: 29%;
   left: 43%;
+  z-index: 100000;
 }
 
 .icons-over {
@@ -370,11 +371,16 @@ body {
   align-items: center;
 }
 
-#user-action,
-#user-action:focus,
-#user-action:hover,
-#user-action:active,
-#user-action:visited {
+#action-sign-up,
+#action-sign-up:focus,
+#action-sign-up:hover,
+#action-sign-up:active,
+#action-sign-up:visited,
+#action-log-in,
+#action-log-in:focus,
+#action-log-in:hover,
+#action-log-in:active,
+#action-log-in:visited {
   color: #000000;
   background-color: transparent;
   outline: none;
@@ -421,15 +427,6 @@ textarea {
   border: none;
   font-size: 2.2vh;
   color: #fff;
-}
-
-.enter-code-modal {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  border: 1px solid yellow;
 }
 
 #try-again,
@@ -639,4 +636,14 @@ textarea {
   outline: none;
   font-size: 3vh;
   color: #000000;
+}
+
+.enter-code-modal {
+  margin: 0 auto;
+  border: 1px solid yellow;
+  display: none;
+}
+
+.modal-body {
+  margin: 0 auto;
 }

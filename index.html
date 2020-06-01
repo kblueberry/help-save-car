@@ -13,23 +13,9 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="index.js"></script>
   </head>
   <body>
@@ -246,8 +232,8 @@
         <button class="download py-3 px-5">Скачати API<span>в форматі .pdf</span></button>
         <form class="contact-window col-10 col-md-6 col-lg-4 py-3">
           <div class="user-action-buttons mb-2">
-            <button class="btn-link"  id="user-action">Реєстрація / </button>
-            <button class="btn-link" id="user-action">Авторизація</button>
+            <button class="btn-link" id="action-sign-up">Реєстрація / </button>
+            <button class="btn-link" id="action-log-in">Авторизація</button>
           </div>
           <div class="forms-wrapper">
             <fieldset class="form-details signup-form px-4 pt-3 pb-3">
@@ -271,25 +257,40 @@
                 <input type="text" name="phone-number" id="phone-number">
               </div>
               <button class="get-phone-code mt-3 mb-4 px-4 py-2">Отримати код</button>
+              <!-- <div id="code-modal" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="./images/icons/success.svg" alt="success-login" class="success-icon result col-3 col-lg-5">
+                      <p class="success-message">Успішне введення коду!</p>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
               <div class="form-field my-3">
                 <label for="sms">Код із SMS-повідомлення</label>
                 <input type="text" name="sms" id="sms">
               </div>
-              <input type="submit" value="Увійти"  class="sign-up mt-5 mb-3 px-4 py-2">
-              <div class="enter-code-modal col-9 col-lg-10 py-4">
+              <input type="submit" value="Увійти"  class="sign-up mt-5 mb-3 px-4 py-2" (click)="logIn()">
+              <!-- <div class="enter-code-modal col-9 col-lg-10 py-4">
                 <img src="./images/icons/success.svg" alt="success-login" class="success-icon result col-3 col-lg-5">
                 <p class="success-message">Успішне введення коду!</p>
-              </div>
-              <div class="enter-code-modal col-9 col-lg-10 py-4">
-                <img src="./images/icons/error.svg" alt="fail-login" class="error-icon result col-3 col-lg-5">
+              </div> -->
+              <!-- <div class="enter-code-modal col-9 col-lg-10 py-4">
+                <img src="./images/icons/error.svg" alt="fail-login" class="error-icon result col-7 col-lg-5">
                 <p class="error-message my-0">Неправильнно введений код!</p>
                 <button class="btn-link link-style py-0 my-0" id="try-again">Спробувати ще раз</button>
-              </div>
+              </div> -->
             </fieldset>
           </div>
         </form>
       </div>
-      <div id="#profile">
+      <div id="profile">
         <div class="row header-group">
           <div class="col-1 col-md-2 col-lg-2 button-home-page">
             <input
@@ -319,7 +320,35 @@
             <button class="create-api-key px-4 py-3">Create API key</button>
             <div class="balance-wrapper">
               <p class="current-balance py-0 my-0">Поточний    баланс - 1112.00 грн.</p>
-              <button class="btn-link link-style my-0 py-0" style="color: rgb(255, 66, 44)">Поповнити баланс</button>
+              <button class="btn-link link-style my-0 py-0" style="color: rgb(255, 66, 44)" data-target="#topUpAccountModal" data-toggle="modal">Поповнити баланс</button>
+            </div>
+            <div id="topUpAccountModal" class="modal" tabindex="-1" role="dialog">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                  <div class="row">
+                    <input type="number" placeholder="Введіть номер картки" name="card-number" id="card-number">
+                  </div>
+                  <div class="row">
+                    <input type="text" placeholder="ПІБ" name="card-holder-name" id="card-holder-name">
+                    <div class="validity">
+                      <p>Термін дії</p>
+                      <input type="number" placeholder="month/year" name="validity-date" id="validity-term">
+                    </div>
+                    <div class="cvv-wrapper">
+                      <input type="number" placeholder="CVV" name="cvv" id="cvv-number">
+                      <img src="./images/icons/card_back_side.svg" alt="credit-card" class="card-icon">
+                      <p class="cvv-instruction">Три останні цифри на зворотній стороні картки</p>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="balance-wrapper my-4">
               <p class="get-balance-on-date my-1">За певну дату:</p>
@@ -327,6 +356,21 @@
             </div>
             <button class="create-api-key get-report px-4 py-3">Звіт у форматі .xls</button>
             <button class="btn-link link-style" id="exit-button">Вихід</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="code-modal" class="modal fade enter-code-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body col-5 col-lg-7"> 
+            <img src="./images/icons/success.svg" alt="success-login" class="success-icon result">
+            <p class="success-message">Успішне введення коду!</p>
           </div>
         </div>
       </div>
