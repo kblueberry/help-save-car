@@ -276,6 +276,15 @@
                 <input type="text" name="sms" id="sms">
               </div>
               <input type="submit" value="Увійти"  class="sign-up mt-5 mb-3 px-4 py-2">
+              <div class="enter-code-modal col-9 col-lg-10 py-4">
+                <img src="./images/icons/success.svg" alt="success-login" class="success-icon result col-3 col-lg-5">
+                <p class="success-message">Успішне введення коду!</p>
+              </div>
+              <div class="enter-code-modal col-9 col-lg-10 py-4">
+                <img src="./images/icons/error.svg" alt="fail-login" class="error-icon result col-3 col-lg-5">
+                <p class="error-message my-0">Неправильнно введений код!</p>
+                <button class="btn-link link-style py-0 my-0" id="try-again">Спробувати ще раз</button>
+              </div>
             </fieldset>
           </div>
         </form>

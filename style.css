@@ -387,9 +387,9 @@ body {
   flex-direction: column;
 }
 
-.login-form {
+/* .login-form {
   display: none;
-}
+} */
 
 .form-details {
   border: 2px solid black;
@@ -421,6 +421,26 @@ textarea {
   border: none;
   font-size: 2.2vh;
   color: #fff;
+}
+
+.enter-code-modal {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid yellow;
+}
+
+#try-again,
+#try-again:active,
+#try-again:focus,
+#try-again:hover,
+#try-again:visited {
+  text-decoration: none;
+  outline: none;
+  font-size: 1.9vh;
+  color: rgb(255, 66, 44);
 }
 
 .download,
