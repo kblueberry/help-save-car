@@ -579,6 +579,8 @@ textarea {
 .link-style:active,
 .link-style:focus,
 .link-style:visited {
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 66, 44);
   color: rgb(255, 66, 44);
   background-color: transparent;
   outline: none;
@@ -595,6 +597,7 @@ textarea {
 #exit-button:focus,
 #exit-button:active,
 #exit-button:visited {
+  text-decoration: underline;
   text-decoration-color: rgb(255, 66, 44);
   outline: none;
   font-size: 3vh;
