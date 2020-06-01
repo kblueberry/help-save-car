@@ -249,21 +249,35 @@
             <button class="btn-link"  id="user-action">Реєстрація / </button>
             <button class="btn-link" id="user-action">Авторизація</button>
           </div>
-          <fieldset class="form-details px-4 pt-3 pb-3">
-            <div class="form-field my-3">
-              <label for="name">Ваше ім'я</label>
-              <input type="text" name="name" id="user-name">
-            </div>
-            <div class="form-field my-3">
-              <label for="email">Назва компанії</label>
-              <input type="email" name="email" id="company-name">
-            </div>
-            <div class="form-field my-3">
-              <label for="message">ЕДРПОУ</label>
-              <input type="text" name="company-code"  id="company-code">
-            </div>
-            <input type="submit" value="Зареєструватись"  class="sign-up mt-5 mb-3 px-4 py-2">
-          </fieldset>
+          <div class="forms-wrapper">
+            <fieldset class="form-details signup-form px-4 pt-3 pb-3">
+              <div class="form-field my-3">
+                <label for="name">Ваше ім'я</label>
+                <input type="text" name="name" id="user-name">
+              </div>
+              <div class="form-field my-3">
+                <label for="email">Назва компанії</label>
+                <input type="email" name="email" id="company-name">
+              </div>
+              <div class="form-field my-3">
+                <label for="message">ЕДРПОУ</label>
+                <input type="text" name="company-code"  id="company-code">
+              </div>
+              <input type="submit" value="Зареєструватись" class="sign-up mt-5 mb-3 px-4 py-2">
+            </fieldset>
+            <fieldset class="form-details login-form px-4 pt-3 pb-3">
+              <div class="form-field my-3">
+                <label for="phone-number">Номер телефону</label>
+                <input type="text" name="phone-number" id="phone-number">
+              </div>
+              <button class="get-phone-code mt-3 mb-4 px-4 py-2">Отримати код</button>
+              <div class="form-field my-3">
+                <label for="sms">Код із SMS-повідомлення</label>
+                <input type="text" name="sms" id="sms">
+              </div>
+              <input type="submit" value="Увійти"  class="sign-up mt-5 mb-3 px-4 py-2">
+            </fieldset>
+          </div>
         </form>
       </div>
       <div id="#profile">

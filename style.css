@@ -382,6 +382,15 @@ body {
   font-size: 3vh;
 }
 
+.forms-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form {
+  display: none;
+}
+
 .form-details {
   border: 2px solid black;
 }
@@ -403,7 +412,8 @@ textarea {
 }
 
 .send-request,
-.sign-up {
+.sign-up,
+.get-phone-code {
   display: block;
   margin: 0 auto;
   background-color: rgb(255, 66, 44);
