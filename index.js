@@ -3,6 +3,18 @@ $(document).ready(function () {
     event.preventDefault()
     $('#code-modal').modal('show')
   })
+
+  $('#action-sign-up').on('click', function (event) {
+    event.preventDefault()
+    $('.login-form').addClass('hidden')
+    $('.signup-form').removeClass('hidden')
+  })
+
+  $('#action-log-in').on('click', function (event) {
+    event.preventDefault()
+    $('.signup-form').addClass('hidden')
+    $('.login-form').removeClass('hidden')
+  })
 })
 
 // $(function () {

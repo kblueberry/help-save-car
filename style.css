@@ -393,9 +393,9 @@ body {
   flex-direction: column;
 }
 
-/* .login-form {
+.hidden {
   display: none;
-} */
+}
 
 .form-details {
   border: 2px solid black;
