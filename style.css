@@ -461,7 +461,7 @@ textarea {
 }
 
 .header-group {
-  margin: 0 auto;
+  margin: 1.5em auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -474,6 +474,10 @@ textarea {
   align-items: center;
 }
 
+.button-home-page a img {
+  max-width: 40%;
+}
+
 .button-home-page input {
   border: none;
 }
@@ -483,13 +487,12 @@ textarea {
 }
 
 .help-save-car-img {
-  max-width: 30%;
+  max-width: 45%;
 }
 
 .help-save-car-title {
   position: relative;
   display: inline-block;
-  letter-spacing: 0.1em;
   margin-top: 15%;
   font-family: 'avengeance_heroic_avengerIt';
   font-size: 3.5vh;
