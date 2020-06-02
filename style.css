@@ -468,11 +468,22 @@ textarea {
   align-items: center;
 }
 
+/* .red-background {
+  background-color: rgb(255, 66, 44);
+  max-height: 60%;
+} */
+
 .img-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+}
+
+.button-home-page {
+  display: block;
+  margin: 0 auto;
 }
 
 .button-home-page a img {
@@ -488,7 +499,7 @@ textarea {
 }
 
 .help-save-car-img {
-  max-width: 45%;
+  max-width: 15%;
 }
 
 .help-save-car-title {
