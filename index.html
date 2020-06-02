@@ -257,35 +257,11 @@
                 <input type="text" name="phone-number" id="phone-number">
               </div>
               <button class="get-phone-code mt-3 mb-4 px-4 py-2">Отримати код</button>
-              <!-- <div id="code-modal" class="modal fade" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <img src="./images/icons/success.svg" alt="success-login" class="success-icon result col-3 col-lg-5">
-                      <p class="success-message">Успішне введення коду!</p>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
               <div class="form-field my-3">
                 <label for="sms">Код із SMS-повідомлення</label>
                 <input type="text" name="sms" id="sms">
               </div>
-              <input type="submit" value="Увійти"  class="sign-up mt-5 mb-3 px-4 py-2" (click)="logIn()">
-              <!-- <div class="enter-code-modal col-9 col-lg-10 py-4">
-                <img src="./images/icons/success.svg" alt="success-login" class="success-icon result col-3 col-lg-5">
-                <p class="success-message">Успішне введення коду!</p>
-              </div> -->
-              <!-- <div class="enter-code-modal col-9 col-lg-10 py-4">
-                <img src="./images/icons/error.svg" alt="fail-login" class="error-icon result col-7 col-lg-5">
-                <p class="error-message my-0">Неправильнно введений код!</p>
-                <button class="btn-link link-style py-0 my-0" id="try-again">Спробувати ще раз</button>
-              </div> -->
+              <input type="submit" value="Увійти"  class="sign-up mt-5 mb-3 px-4 py-2">
             </fieldset>
           </div>
         </form>
@@ -360,7 +336,7 @@
         </div>
       </div>
     </div>
-    <div id="code-modal" class="modal fade enter-code-modal" tabindex="-1" role="dialog">
+    <div id="success-modal" class="modal fade enter-code-modal" tabindex="-1" role="dialog">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -371,6 +347,45 @@
           <div class="modal-body col-5 col-lg-7"> 
             <img src="./images/icons/success.svg" alt="success-login" class="success-icon result">
             <p class="success-message">Успішне введення коду!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="error-modal" class="modal fade enter-code-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body col-5 col-lg-7"> 
+            <img src="./images/icons/errorsvg"alt="fail-login" class="error-iconresultcol-7 col-lg-5">
+            <p class="error-message my-0">Неправильно введений код!</p>
+            <button class="btn-link link-style py-0my-0"id="try-again">Спробувати ще раз</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="code-modal" class="modal fade enter-code-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body col-5 col-lg-7"> 
+            <h5 id="exampleModalCenterTitle">Підтвердження номера телефону<span>+380677844XXXX</span></h5>
+            <p class="notification">На телефонний номер 380677844XXXX відправлено повідомлення з кодом</p>
+            <div class="code-inputs">
+              <input type="number" placeholder="356749" name="number-code" id="sms-code" readonly>
+              <button class="agree px-4 py-2 mx-0" id="agree-button">Підтвердити</button>
+            </div>
+            <div class="did-not-get-code-wrapper my-2">
+              <p class="no-code py-0 my-0">Не отримали код?</p>
+              <button class="btn-link link-style" id="did-not-get-code">Спробувати ще раз</button>
+            </div>
           </div>
         </div>
       </div>
