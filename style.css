@@ -23,30 +23,16 @@ body {
   height: 100vh;
 }
 
-.ui-selectmenu-menu .ui-menu.customicons .ui-menu-item-wrapper {
-  padding: 0.5em 0 0.5em 3em;
-}
-
-.ui-selectmenu-menu .ui-menu.customicons .ui-menu-item .ui-icon {
-  height: 30px;
-  width: 30px;
-  top: 0.1em;
-}
-
 .no-border {
   outline: none;
 }
 
-.ui-icon.video {
-  background: url('./images/icons/ua_flag.svg') no-repeat;
+.flag {
+  font-size: 2.7vh;
 }
 
-.ui-icon.podcast {
-  background: url('./images/icons/us_flag.svg') 0 0 no-repeat;
-}
-
-.ui-icon.rss {
-  background: url('./images/icons/vie_flag.svg') 0 0 no-repeat;
+.popover-content ul {
+  list-style: none;
 }
 
 #lng-list {
