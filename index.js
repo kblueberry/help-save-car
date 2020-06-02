@@ -15,6 +15,11 @@ $(document).ready(function () {
     $('.signup-form').addClass('hidden')
     $('.login-form').removeClass('hidden')
   })
+
+  $('.sign-up, .log-in').on('click', function () {
+    event.preventDefault()
+    $('#profile').removeClass('hidden')
+  })
 })
 
 // $(function () {

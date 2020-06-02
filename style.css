@@ -419,6 +419,7 @@ textarea {
 
 .send-request,
 .sign-up,
+.log-in,
 .get-phone-code,
 .agree {
   display: block;
