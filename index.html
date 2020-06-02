@@ -298,34 +298,6 @@
               <p class="current-balance py-0 my-0">Поточний    баланс - 1112.00 грн.</p>
               <button class="btn-link link-style my-0 py-0" style="color: rgb(255, 66, 44)" data-target="#topUpAccountModal" data-toggle="modal">Поповнити баланс</button>
             </div>
-            <div id="topUpAccountModal" class="modal" tabindex="-1" role="dialog">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                  <div class="row">
-                    <input type="number" placeholder="Введіть номер картки" name="card-number" id="card-number">
-                  </div>
-                  <div class="row">
-                    <input type="text" placeholder="ПІБ" name="card-holder-name" id="card-holder-name">
-                    <div class="validity">
-                      <p>Термін дії</p>
-                      <input type="number" placeholder="month/year" name="validity-date" id="validity-term">
-                    </div>
-                    <div class="cvv-wrapper">
-                      <input type="number" placeholder="CVV" name="cvv" id="cvv-number">
-                      <img src="./images/icons/card_back_side.svg" alt="credit-card" class="card-icon">
-                      <p class="cvv-instruction">Три останні цифри на зворотній стороні картки</p>
-                    </div>
-                  </div>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div class="balance-wrapper my-4">
               <p class="get-balance-on-date my-1">За певну дату:</p>
               <input class="select-date my-0 px-3 py-2" id="select-date" type="button" value="дд./мм./рр.">
@@ -386,6 +358,34 @@
               <p class="no-code py-0 my-0">Не отримали код?</p>
               <button class="btn-link link-style" id="did-not-get-code">Спробувати ще раз</button>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="top-up-account-modal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          <div class="row">
+            <input type="number" placeholder="Введіть номер картки" name="card-number" id="card-number">
+          </div>
+          <div class="row">
+            <input type="text" placeholder="ПІБ" name="card-holder-name" id="card-holder-name">
+            <div class="validity">
+              <p>Термін дії</p>
+              <input type="number" placeholder="month/year" name="validity-date" id="validity-term">
+            </div>
+            <div class="cvv-wrapper">
+              <input type="number" placeholder="CVV" name="cvv" id="cvv-number">
+              <img src="./images/icons/card_back_side.svg" alt="credit-card" class="card-icon">
+              <p class="cvv-instruction">Три останні цифри на зворотній стороні картки</p>
+            </div>
+          </div>
           </div>
         </div>
       </div>

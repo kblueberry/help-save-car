@@ -653,11 +653,11 @@ textarea {
 span {
   text-align: center;
   display: block;
-  font-size: 2vh;
+  font-size: 2.2vh;
 }
 
 .no-code {
-  font-size: 2vh;
+  font-size: 2.2vh;
   font-weight: 500;
 }
 
@@ -691,4 +691,9 @@ span {
 
 #agree-button {
   font-size: 1.4vh;
+}
+
+#did-not-get-code {
+  color: rgb(255, 66, 44);
+  text-decoration: none;
 }
