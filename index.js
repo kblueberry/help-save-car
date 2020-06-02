@@ -1,11 +1,4 @@
 $(document).ready(function () {
-  $('.get-phone-code').on('click', function (event) {
-    event.preventDefault()
-    $('#code-modal').modal('show')
-    $('#code-modal').addClass('border-danger')
-    $('#code-modal').css('border-width', '2px')
-  })
-
   $('#action-sign-up').on('click', function (event) {
     event.preventDefault()
     $('.login-form').addClass('hidden')
@@ -23,6 +16,13 @@ $(document).ready(function () {
     $('#profile').removeClass('hidden')
   })
 
+  $('.get-phone-code').on('click', function (event) {
+    event.preventDefault()
+    $('#code-modal').modal('show')
+    $('#code-modal').addClass('border-danger')
+    $('#code-modal').css('border-width', '2px')
+  })
+
   $('.agree').on('click', function () {
     event.preventDefault()
     // $('#error-modal').modal('show')
@@ -33,6 +33,10 @@ $(document).ready(function () {
     $('#success-modal').css('z-index', '10000')
     $('#success-modal').addClass('border-success')
     $('#success-modal').css('border-width', '2px')
+  })
+
+  $('.top-up').on('click', function () {
+    $('#top-up-account-modal').modal('show')
   })
 })
 

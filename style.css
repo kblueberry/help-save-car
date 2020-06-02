@@ -653,6 +653,12 @@ textarea {
   margin: 0 auto;
 }
 
+.modal-body input {
+  background-color: lightgray;
+  border: none;
+  border-radius: 8px;
+}
+
 #code-modal .modal-body h5,
 span {
   text-align: center;
@@ -714,4 +720,41 @@ span {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+}
+
+#card-holder-name {
+  width: fit-content;
+}
+
+#top-up-account-modal input {
+  width: 100%;
+}
+
+#top-up-account-modal input::placeholder {
+  font-size: 1.6vh;
+}
+
+/* .card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
+} */
+
+.cardholder,
+.validity {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cvv-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.validity > p,
+.cvv-instruction {
+  font-size: 1.2vh;
 }

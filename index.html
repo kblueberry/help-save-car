@@ -294,7 +294,7 @@
             <button class="create-api-key px-4 py-3">Create API key</button>
             <div class="balance-wrapper">
               <p class="current-balance py-0 my-0">Поточний    баланс - 1112.00 грн.</p>
-              <button class="btn-link link-style my-0 py-0" style="color: rgb(255, 66, 44)" data-target="#topUpAccountModal" data-toggle="modal">Поповнити баланс</button>
+              <button class="btn-link link-style top-up my-0 py-0" style="color: rgb(255, 66, 44)" data-target="#topUpAccountModal" data-toggle="modal">Поповнити баланс</button>
             </div>
             <div class="balance-wrapper my-4">
               <p class="get-balance-on-date my-1">За певну дату:</p>
@@ -368,21 +368,21 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body col-8 col-lg-7">
-          <div class="row">
-            <input type="number" placeholder="Введіть номер картки" name="card-number" id="card-number">
+          <div class="modal-body card-info col-8 col-lg-9">
+          <div class="card-number-wrapper my-2">
+            <input type="text" placeholder="Введіть номер картки" name="card-number" id="card-number" class="px-2 py-1">
           </div>
-          <div class="row">
-            <input type="text" placeholder="ПІБ" name="card-holder-name" id="card-holder-name">
-            <div class="validity">
-              <p>Термін дії</p>
-              <input type="number" placeholder="month/year" name="validity-date" id="validity-term">
+          <div class="cardholder my-1">
+            <input type="text" placeholder="ПІБ" name="card-holder-name" id="card-holder-name" class="px-2 py-1">
+            <div class="validity ml-3">
+              <p class="py-0 my-0 mr-1">Термін дії</p>
+              <input type="text" placeholder="month/year" name="validity-date" id="validity-term" class="px-2 py-1">
             </div>
-            <div class="cvv-wrapper">
-              <input type="number" placeholder="CVV" name="cvv" id="cvv-number">
-              <img src="./images/icons/card_back_side.svg" alt="credit-card" class="card-icon">
-              <p class="cvv-instruction">Три останні цифри на зворотній стороні картки</p>
-            </div>
+          </div>
+          <div class="cvv-wrapper my-1">
+            <input type="text" placeholder="CVV" name="cvv" id="cvv-number" class="px-2 py-1">
+            <img src="./images/icons/card_back_side.svg" alt="credit-card" class="card-icon col-3 col-lg-3 py-0 my-0">
+            <p class="cvv-instruction py-0 my-0">Три останні цифри на зворотній стороні картки</p>
           </div>
           </div>
         </div>
