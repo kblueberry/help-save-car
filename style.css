@@ -1,5 +1,10 @@
 @import './fonts/stylesheet.css';
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   position: relative;
   height: 100vh;
@@ -205,11 +210,6 @@ body {
 }
 
 .row {
-  /* display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap !important;
-  justify-content: space-between;
-  align-items: center; */
   width: 100%;
 }
 
