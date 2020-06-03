@@ -1,4 +1,17 @@
 $(document).ready(function () {
+  $('#open-lng-options').popover({
+    content: $(function () {
+      $('.lng-settings').append($('.popover-content'))
+    }),
+    html: true,
+  })
+
+  $('#open-lng-options').on('click', function (event) {
+    event.preventDefault()
+    $('.popover-content').removeClass('hidden')
+    $('#open-lng-options').popover('show')
+  })
+
   $('#action-sign-up').on('click', function (event) {
     event.preventDefault()
     $('.login-form').addClass('hidden')

@@ -22,11 +22,15 @@
     <div class="main w-100 h-100">
       <div id="home-screen" class="py-2">
         <div class="lng-settings">
-          <button type="button" class="btn" data-container="body" data-toggle="popover" data-placement="bottom"  data-content alt="ua" class="flag col-3 col-lg-3 px-0">
+          <!-- <button type="button" class="btn" data-container="body" data-toggle="popover" data-placement="bottom" alt="ua" class="flag col-3 col-lg-3 px-0" id="open-lng-options">
             <img src="./images/icons/Ukraine.png" alt="vie" class="col-3 px-0 flag-img">
             Українська
-          </button>
-          <div class="popover-content">
+          </button> -->
+          <a href="#" tabindex="0" class="btn popover-dismissible" role="button" data-toggle="popover" data-trigger="focus" class="flag col-3 col-lg-3 px-0" id="open-lng-options">
+            <img src="./images/icons/Ukraine.png" alt="vie" class="col-3 px-0 flag-img">
+            Українська
+          </a>
+          <div class="popover-content hidden">
             <ul>
               <a href="#">
                 <li class="flag flag-option">
@@ -102,38 +106,6 @@
               </a>
             </ul>
           </div>
-          <!-- <select id="lng-list">
-            <option value="ua">Ukrainian</option>
-            <option value="uk-us">English</option>
-            <option value="it">Italien</option>
-            <option value="de">Deutch</option>
-            <option value="fr">Français</option>
-            <option value="pt">Português</option>
-            <option value="ch">中文</option>
-            <option value="ru">Русский</option>
-            <option value="pl">Polskie</option>
-            <option value="in">Bahasa Indonesia</option>
-            <option value="viet">Ngôn ngữ tiếng Việt</option>
-            <option value="is">שפה עברית</option>
-          </select> -->
-          <!-- <div id="lng-list" class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Вибрати мову
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item ua" href="#"><img src="./images/icons/ua_flag.svg" alt="ua" class="ua">Ukrainian</a></li>
-              <li><a class="dropdown-item en" href="#"><img src="./images/icons/ua_flag.svg" alt="ua" class="ua">English</a></li>
-              <li><a class="dropdown-item it" href="#"><img src="./images/icons/ua_flag.svg" alt="ua" class="ua">Italien</a></li>
-              <li><a class="dropdown-item" href="#"><img src="./images/icons/ua_flag.svg" alt="ua" class="ua">Deutch</a></li>
-              <li><a class="dropdown-item" href="#"><img src="./images/icons/fr_flag.svg" alt="fr" class="fr">Français action</a></li>
-              <li><a class="dropdown-item" href="#"><img src="./images/icons/pt_flag.svg" alt="pt" class="pt">Português</a></li>
-              <li><a class="dropdown-item" href="#"><img src="./images/icons/china-flag.svg" alt="china" class="china">中文</a></li>
-              <li><a class="dropdown-item" href="#"><img src="./images/icons/ru_flag.svg" alt="ru" class="ru">Русский</a></li>
-              <li><a class="dropdown-item" href="#"><img src="./images/icons/pl_flag.svg" alt="pl" class="pl">Polskie</a></li>
-              <li><a class="dropdown-item" href="#"><img src="./images/icons/in_flag.svg" alt="indonesian" class="indonesian">Bahasa Indonesia</a></li>
-              <li><a class="dropdown-item" href="#"><img src="./images/icons/vie_flag.svg" alt="vie" class="vie">Ngôn ngữ tiếng Việt</a></li>
-              <li><a class="dropdown-item" href="#"><img src="./images/icons/is_flag.svg" alt="israel" class="israel">שפה עברית</a></li>
-              </ul>
-          </div> -->
         </div>
         <div class="logo-wrapper">
           <h1 class="logo pt-0 pl-4 pb-1 pr-4">HelpSaveCar</h1>

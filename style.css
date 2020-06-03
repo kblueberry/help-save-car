@@ -35,26 +35,6 @@ body {
   list-style: none;
 }
 
-#lng-list {
-  background-color: white;
-}
-
-#dropdownMenuLink {
-  border: none;
-  color: #000000;
-  background-color: white;
-}
-
-/* .dropdown-menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.dropdown-menu > li a img {
-  min-width: 20px;
-} */
-
 .logo-wrapper {
   position: relative;
   display: flex;
