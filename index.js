@@ -6,11 +6,28 @@ $(document).ready(function () {
     html: true,
   })
 
+  $('.popover-dismissible').popover({
+    trigger: 'focus',
+  })
+
   $('#open-lng-options').on('click', function (event) {
     event.preventDefault()
     $('.popover-content').removeClass('hidden')
     $('#open-lng-options').popover('show')
   })
+
+  // Popover hides on clicking behind the focus, work in progress
+  // $('body').on('click', function (e) {
+  //   $('#open-lng-options').each(function () {
+  //     if (
+  //       !$(this).is(e.target) &&
+  //       $(this).has(e.target).length === 0 &&
+  //       $('.popover-content').has(e.target).length === 0
+  //     ) {
+  //       $(this).popover('hide')
+  //     }
+  //   })
+  // })
 
   $('#action-sign-up').on('click', function (event) {
     event.preventDefault()

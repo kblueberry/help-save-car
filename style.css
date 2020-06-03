@@ -31,6 +31,10 @@ body {
   font-size: 2.7vh;
 }
 
+.popover-content {
+  position: relative;
+}
+
 .popover-content ul {
   list-style: none;
 }
