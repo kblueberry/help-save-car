@@ -28,6 +28,10 @@ body {
   height: 100vh;
 }
 
+.lng-settings {
+  text-align: center;
+}
+
 .no-border {
   outline: none;
 }
