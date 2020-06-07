@@ -61,7 +61,7 @@ body {
   display: inline-block;
   letter-spacing: 0.1em;
   margin-top: 15%;
-  font-family: 'avengeance_heroic_avengerIt';
+  font-family: 'avengeance_heroic_avengerRg';
   font-size: 8.3vh;
   color: #ffffff;
   -webkit-text-stroke-width: 3px;
@@ -71,7 +71,7 @@ body {
 .logo::before {
   vertical-align: bottom;
   content: '';
-  font-family: 'avengeance_heroic_avengerIt';
+  font-family: 'avengeance_heroic_avengerRg';
   font-size: 8.3vh;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
@@ -83,7 +83,7 @@ body {
   top: -3%;
   left: 1.8rem;
   content: 'HelpSaveCar';
-  font-family: 'avengeance_heroic_avengerIt';
+  font-family: 'avengeance_heroic_avengerRg';
   font-size: 8.3vh;
   color: rgb(250, 60, 41);
   -webkit-text-stroke-width: 2px;
@@ -486,7 +486,7 @@ textarea {
   position: relative;
   display: inline-block;
   margin-top: 15%;
-  font-family: 'avengeance_heroic_avengerIt';
+  font-family: 'avengeance_heroic_avengerRg';
   font-size: 3.5vh;
   color: #ffffff;
   -webkit-text-stroke-width: 1.8px;
@@ -496,7 +496,7 @@ textarea {
 .help-save-car-title::before {
   vertical-align: bottom;
   content: '';
-  font-family: 'avengeance_heroic_avengerIt';
+  font-family: 'avengeance_heroic_avengerRg';
   font-size: 3.5vh;
   -webkit-text-stroke-width: 1.8px;
   -webkit-text-stroke-color: black;
@@ -508,7 +508,7 @@ textarea {
   top: -3%;
   left: 1.6rem;
   content: 'HelpSaveCar';
-  font-family: 'avengeance_heroic_avengerIt';
+  font-family: 'avengeance_heroic_avengerRg';
   font-size: 3.5vh;
   color: rgb(250, 60, 41);
   -webkit-text-stroke-width: 1.8px;
@@ -527,7 +527,7 @@ textarea {
   margin-top: 15%;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'avengeance_heroic_avengerIt';
+  font-family: 'avengeance_heroic_avengerRg';
   font-size: 5.5vh;
   color: #ffffff;
   -webkit-text-stroke-width: 1.8px;
@@ -537,7 +537,7 @@ textarea {
 .modal-title::before {
   vertical-align: bottom;
   content: '';
-  font-family: 'avengeance_heroic_avengerIt';
+  font-family: 'avengeance_heroic_avengerRg';
   font-size: 5.5vh;
   -webkit-text-stroke-width: 1.8px;
   -webkit-text-stroke-color: black;
@@ -549,7 +549,7 @@ textarea {
   top: 1.3%;
   left: -0.1em;
   content: 'My Profile';
-  font-family: 'avengeance_heroic_avengerIt';
+  font-family: 'avengeance_heroic_avengerRg';
   font-size: 5.5vh;
   color: rgb(250, 60, 41);
   -webkit-text-stroke-width: 1.8px;

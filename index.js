@@ -22,7 +22,7 @@ $(document).ready(function () {
   //     if (
   //       !$(this).is(e.target) &&
   //       $(this).has(e.target).length === 0 &&
-  //       $('.popover-content').has(e.target).length === 0
+  //       $('.pІopover-content').has(e.target).length === 0
   //     ) {
   //       $(this).popover('hide')
   //     }
