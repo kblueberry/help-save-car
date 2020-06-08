@@ -12,22 +12,22 @@ $(document).ready(function () {
     $('#open-lng-options').popover('show')
   })
 
-  // $('.popover-dismissible').popover({
-  //   trigger: 'focus',
-  // })
+  $('.popover-dismissible').popover({
+    trigger: 'manual',
+  })
 
   // Popover hides on clicking behind the focus, work in progress
-  // $('body').on('click', function (e) {
-  //   $('#open-lng-options').each(function () {
-  //     if (
-  //       !$(this).is(e.target) &&
-  //       $(this).has(e.target).length === 0 &&
-  //       $('.pІopover-content').has(e.target).length === 0
-  //     ) {
-  //       $(this).popover('hide')
-  //     }
-  //   })
-  // })
+  $('body').on('click', function (e) {
+    $('#open-lng-options').each(function () {
+      if (
+        !$(this).is(e.target) &&
+        $(this).has(e.target).length === 0 &&
+        $('.pІopover-content').has(e.target).length === 0
+      ) {
+        $(this).popover('hide')
+      }
+    })
+  })
 
   $('#action-sign-up').on('click', function (event) {
     event.preventDefault()
