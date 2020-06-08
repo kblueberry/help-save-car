@@ -12,92 +12,86 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
   </head>
   <body>
     <div class="main w-100 h-100">
       <div id="home-screen" class="py-2">
         <div class="lng-settings col-12 col-md-6 col-lg-6 px-0">
-          <a href="#" tabindex="0" class="btn popover-dismissible" role="button" data-toggle="popover" data-trigger="focus" class="flag px-0" id="open-lng-options">
+          <a href="#" tabindex="0" class="btn popover-dismissible" role="button" data-toggle="popover" data-placement="bottom"  data-trigger="focus" class="flag px-0" id="open-lng-options">
             <img src="./images/icons/Ukraine.png" alt="vie" class="col-3 px-0 flag-img">
             Українська
           </a>
-          <!-- Now it's not working properly, it doesn't hide on click behind the focus, should think how to fix as a next step -->  
           <div class="popover-content hidden">
             <ul>
               <a href="#">
                 <li class="flag flag-option">
-                  <img src="./images/icons/Ukraine.png" alt="eng" class="flag-img col-2">
+                  <img src="./images/icons/Ukraine.png" alt="eng" class="flag-img col-1">
                   Українська
                 </li>
               </a>
               <a href="#">
                 <li class="flag flag-option">
-                  <img src="./images/icons/Usa.png" alt="eng" class="flag-img col-2">
+                  <img src="./images/icons/Usa.png" alt="eng" class="flag-img col-1">
                   English
                 </li>
               </a>
               <a href="#">
                 <li class="flag flag-option">
-                  <img src="./images/icons/Italy.png" alt="eng" class="flag-img col-2">
+                  <img src="./images/icons/Italy.png" alt="eng" class="flag-img col-1">
                   Italien
                 </li>
               </a>
               <a href="#">
                 <li class="flag flag-option">
-                  <img src="./images/icons/Germany.png" alt="eng" class="flag-img col-2">
+                  <img src="./images/icons/Germany.png" alt="eng" class="flag-img col-1">
                   Deutch
                 </li>
               </a>
               <a href="#">
                 <li class="flag flag-option">
-                  <img src="./images/icons/France.png" alt="eng" class="flag-img col-2">
+                  <img src="./images/icons/France.png" alt="eng" class="flag-img col-1">
                   Français
                 </li>
               </a>
               <a href="#">
                 <li class="flag flag-option">
-                  <img src="./images/icons/Russia.png" alt="eng" class="flag-img col-2">
+                  <img src="./images/icons/Russia.png" alt="eng" class="flag-img col-1">
                   Русский
                 </li>
               </a>
               <a href="#">
                 <li class="flag flag-option">
-                  <img src="./images/icons/Portugal.png" alt="eng" class="flag-img col-2">
+                  <img src="./images/icons/Portugal.png" alt="eng" class="flag-img col-1">
                   Português
                 </li>
               </a>
               <a href="#">
                 <li class="flag flag-option">
-                  <img src="./images/icons/Poland.png" alt="eng" class="flag-img col-2">
+                  <img src="./images/icons/Poland.png" alt="eng" class="flag-img col-1">
                   Polskie
                 </li>
               </a>
               <a href="#">
                 <li class="flag flag-option">
-                  <img src="./images/icons/China.png" alt="eng" class="flag-img col-2">
+                  <img src="./images/icons/China.png" alt="eng" class="flag-img col-1">
                   中文
                 </li>
               </a>
               <a href="#">
                 <li class="flag flag-option">
-                  <img src="./images/icons/Indonesia.png" alt="eng" class="flag-img col-2">
+                  <img src="./images/icons/Indonesia.png" alt="eng" class="flag-img col-1">
                   Bahasa Indonesia
                 </li>
               </a>
               <a href="#">
                 <li class="flag flag-option">
-                  <img src="./images/icons/Vietnam.png" alt="eng" class="flag-img col-2">
+                  <img src="./images/icons/Vietnam.png" alt="eng" class="flag-img col-1">
                   Ngôn ngữ tiếng Việt
                 </li>
               </a>
               <a href="#">
                 <li class="flag flag-option">
-                  <img src="./images/icons/Israel.png" alt="eng" class="flag-img col-2">
+                  <img src="./images/icons/Israel.png" alt="eng" class="flag-img col-1">
                   שפה עברית
                 </li>
               </a>
@@ -141,128 +135,16 @@
           </div>
         </div>
         <div class="mySlides">
-          <div class="img-wrapper my-5">
-            <img
-              src="./images/image-bg-frame.png"
-              alt="frame"
-              class="img-dashed-frame"
-            />
-            <img
-              src="./images/image-bg.png"
-              alt="image"
-              class="image-bg py-2"
-            />
-            <img src="./images/bike-inside-img.png"alt="bike" class="bike" />
-            <img
-              src="./images/icons-over-img.png"
-              alt="icons"
-              class="icons-over"
-            />
-            <img src="./images/lock.png" alt="lock"class="lock icons-over" />
-            <div class="grey-icons">
-              <img src="./images/grey-hand.png"alt="grey-hand" class="hand" />
-              <img
-                src="./images/grey-defense.png"
-                alt="defense"
-                class="defense"
-              />
-              <img src="./images/grey-cup.png" alt="cup"class="cup" />
-              <img src="./images/grey-camera.png"alt="camera" class="camera" />
-            </div>
-          </div>
+          <img src="https://picsum.photos/300/300?dummy=1" alt="random_img" class="col-6 offset-3"> 
         </div>
         <div class="mySlides">
-          <div class="img-wrapper my-5">
-            <img
-              src="./images/image-bg-frame.png"
-              alt="frame"
-              class="img-dashed-frame"
-            />
-            <img
-              src="./images/image-bg.png"
-              alt="image"
-              class="image-bg py-2"
-            />
-            <img src="./images/bike-inside-img.png"alt="bike" class="bike" />
-            <img
-              src="./images/icons-over-img.png"
-              alt="icons"
-              class="icons-over"
-            />
-            <img src="./images/lock.png" alt="lock"class="lock icons-over" />
-            <div class="grey-icons">
-              <img src="./images/grey-hand.png"alt="grey-hand" class="hand" />
-              <img
-                src="./images/grey-defense.png"
-                alt="defense"
-                class="defense"
-              />
-              <img src="./images/grey-cup.png" alt="cup"class="cup" />
-              <img src="./images/grey-camera.png"alt="camera" class="camera" />
-            </div>
-          </div>
+          <img src="https://picsum.photos/300/300?dummy=2" alt="random_img" class="col-6 offset-3"> 
         </div>
         <div class="mySlides">
-          <div class="img-wrapper my-5">
-            <img
-              src="./images/image-bg-frame.png"
-              alt="frame"
-              class="img-dashed-frame"
-            />
-            <img
-              src="./images/image-bg.png"
-              alt="image"
-              class="image-bg py-2"
-            />
-            <img src="./images/bike-inside-img.png"alt="bike" class="bike" />
-            <img
-              src="./images/icons-over-img.png"
-              alt="icons"
-              class="icons-over"
-            />
-            <img src="./images/lock.png" alt="lock"class="lock icons-over" />
-            <div class="grey-icons">
-              <img src="./images/grey-hand.png"alt="grey-hand" class="hand" />
-              <img
-                src="./images/grey-defense.png"
-                alt="defense"
-                class="defense"
-              />
-              <img src="./images/grey-cup.png" alt="cup"class="cup" />
-              <img src="./images/grey-camera.png"alt="camera" class="camera" />
-            </div>
-          </div>
+          <img src="https://picsum.photos/300/300" alt="random_img" class="col-6 offset-3"> 
         </div>
         <div class="mySlides">
-          <div class="img-wrapper my-5">
-            <img
-              src="./images/image-bg-frame.png"
-              alt="frame"
-              class="img-dashed-frame"
-            />
-            <img
-              src="./images/image-bg.png"
-              alt="image"
-              class="image-bg py-2"
-            />
-            <img src="./images/bike-inside-img.png"alt="bike" class="bike" />
-            <img
-              src="./images/icons-over-img.png"
-              alt="icons"
-              class="icons-over"
-            />
-            <img src="./images/lock.png" alt="lock"class="lock icons-over" />
-            <div class="grey-icons">
-              <img src="./images/grey-hand.png"alt="grey-hand" class="hand" />
-              <img
-                src="./images/grey-defense.png"
-                alt="defense"
-                class="defense"
-              />
-              <img src="./images/grey-cup.png" alt="cup"class="cup" />
-              <img src="./images/grey-camera.png"alt="camera" class="camera" />
-            </div>
-          </div>
+          <img src="https://picsum.photos/300/300?dummy=3" alt="random_img" class="col-6 offset-3"> 
         </div>
       </div>
       <br>
@@ -519,5 +401,11 @@
         </div>
       </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
   </body>
 </html>

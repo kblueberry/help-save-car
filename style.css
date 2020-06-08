@@ -36,6 +36,10 @@ body {
   outline: none;
 }
 
+.arrow {
+  visibility: hidden;
+}
+
 .flag {
   font-size: 2.7vh;
 }
