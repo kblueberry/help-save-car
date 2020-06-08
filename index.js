@@ -6,15 +6,15 @@ $(document).ready(function () {
     html: true,
   })
 
-  $('.popover-dismissible').popover({
-    trigger: 'focus',
-  })
-
   $('#open-lng-options').on('click', function (event) {
     event.preventDefault()
     $('.popover-content').removeClass('hidden')
     $('#open-lng-options').popover('show')
   })
+
+  // $('.popover-dismissible').popover({
+  //   trigger: 'focus',
+  // })
 
   // Popover hides on clicking behind the focus, work in progress
   // $('body').on('click', function (e) {
