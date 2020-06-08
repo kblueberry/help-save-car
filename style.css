@@ -506,11 +506,6 @@ textarea {
   align-items: center;
 }
 
-/* .red-background {
-  background-color: rgb(255, 66, 44);
-  max-height: 60%;
-} */
-
 .img-wrapper {
   display: flex;
   flex-direction: column;
@@ -573,6 +568,17 @@ textarea {
   -webkit-text-stroke-color: black;
 }
 
+#profile {
+  position: relative;
+}
+
+.red-background {
+  position: absolute;
+  top: 55%;
+  background-color: rgb(255, 66, 44);
+  max-height: 60%;
+}
+
 .my-profile-modal {
   display: flex;
   flex-direction: column;
@@ -620,7 +626,9 @@ textarea {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  border: 1px solid #000000;
+  border: 2px solid #000000;
+  background-color: white;
+  z-index: 7000;
 }
 
 .profile-avatar {
