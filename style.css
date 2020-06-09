@@ -41,24 +41,24 @@ body {
 }
 
 .flag {
-  font-size: 2.7vh;
+  font-size: 2.5vh;
 }
 
 .popover-content {
   position: relative;
 }
 
-.popover-content ul {
-  list-style: none;
-}
-
-.own-style {
-  color: #000000;
-  text-decoration: none;
-}
-
 .language-dropdown {
   list-style: none;
+}
+
+.language-dropdown a,
+a:visited,
+a:active,
+a:hover,
+a:link {
+  text-decoration: none;
+  color: #000000;
 }
 
 .logo-wrapper {
