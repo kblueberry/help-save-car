@@ -50,6 +50,7 @@ body {
 
 .language-dropdown {
   list-style: none;
+  columns: 2;
 }
 
 .language-dropdown a,
