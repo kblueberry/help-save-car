@@ -30,6 +30,7 @@ body {
 
 .lng-settings {
   text-align: center;
+  z-index: 800000;
 }
 
 .no-border {
@@ -51,6 +52,18 @@ body {
 .language-dropdown {
   list-style: none;
   columns: 2;
+}
+
+.language-dropdown li {
+  font-size: 1.8vh;
+}
+
+.popover {
+  max-width: 40em !important;
+}
+
+.popover-body {
+  padding: 0.2rem 0.2rem;
 }
 
 .language-dropdown a,
