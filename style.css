@@ -52,6 +52,15 @@ body {
   list-style: none;
 }
 
+.own-style {
+  color: #000000;
+  text-decoration: none;
+}
+
+.language-dropdown {
+  list-style: none;
+}
+
 .logo-wrapper {
   position: relative;
   display: flex;
